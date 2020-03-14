@@ -1,11 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class OptionsMenu : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject MainMenu;
+    private SceneLoader sceneLoader;
+
+    void Start()
+    {
+        sceneLoader = GameObject.Find("SceneManager").GetComponent<SceneLoader>();
+    }
 
     public void Option_1()
     {
@@ -24,7 +29,6 @@ public class OptionsMenu : MonoBehaviour
 
     public void Back()
     {
-        MainMenu.SetActive(true);
-        this.gameObject.SetActive(false);
+        sceneLoader.PreviousScene();
     }
 }

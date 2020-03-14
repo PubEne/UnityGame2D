@@ -1,21 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject OptionsMenu;
+    [SerializeField, NotNull]
+    private SceneLoader sceneLoader;
 
     public void Play()
     {
-        SceneManager.LoadScene("GameScene");
+        sceneLoader.LoadScene("GameScene");
     }
 
     public void Options()
     {
-        OptionsMenu.SetActive(true);
-        this.gameObject.SetActive(false);
+        sceneLoader.LoadScene("OptionsScene");
     }
 
     public void Quit()
