@@ -5,11 +5,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class OptionsMenu : MonoBehaviour
 {
-    private SceneLoader sceneLoader;
+    private SceneLoader _sceneLoader;
 
     void Start()
     {
-        sceneLoader = GameObject.Find("SceneManager").GetComponent<SceneLoader>();
+        _sceneLoader = GameObject.Find("SceneManager").GetComponent<SceneLoader>();
     }
 
     public void Option_1()
@@ -29,6 +29,6 @@ public class OptionsMenu : MonoBehaviour
 
     public void Back()
     {
-        sceneLoader.PreviousScene();
+        _sceneLoader.PreviousScene();
     }
 }

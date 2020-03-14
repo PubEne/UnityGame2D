@@ -9,11 +9,6 @@ public static class Globals
 
 public class Settings : MonoBehaviour
 {
-    public void Start()
-    {
-
-    }
-
     public void DraggingOn(bool value)
     {
         if (value == true)

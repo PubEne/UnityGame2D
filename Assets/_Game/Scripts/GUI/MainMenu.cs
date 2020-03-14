@@ -6,16 +6,16 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField, NotNull]
-    private SceneLoader sceneLoader;
+    private SceneLoader _sceneLoader;
 
     public void Play()
     {
-        sceneLoader.LoadScene("GameScene");
+        _sceneLoader.LoadScene("GameScene");
     }
 
     public void Options()
     {
-        sceneLoader.LoadScene("OptionsScene");
+        _sceneLoader.LoadScene("OptionsScene");
     }
 
     public void Quit()

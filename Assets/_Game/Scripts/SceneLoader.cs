@@ -5,17 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    private List<string> sceneHistory = new List<string>();
-    private static SceneLoader s_Instance = null;
+    private List<string> _sceneHistory = new List<string>();
+    private static SceneLoader _sInstance = null;
 
     void Awake()
     {
-        if (s_Instance == null)
+        if (_sInstance == null)
         {
-            s_Instance = this;
+            _sInstance = this;
             DontDestroyOnLoad(gameObject);
-
-            //Initialization code goes here[/INDENT]
         }
         else
         {
@@ -25,13 +23,12 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
-        sceneHistory.Add(SceneManager.GetActiveScene().name);
+        _sceneHistory.Add(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene(sceneName);
     }
 
     public void PreviousScene()
     {
-        var a = sceneHistory.Count;
-        SceneManager.LoadScene(sceneHistory[a-1]);
+        SceneManager.LoadScene(_sceneHistory[_sceneHistory.Count-1]);
     }
 }
