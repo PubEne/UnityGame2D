@@ -5,17 +5,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField, NotNull]
     private SceneLoader _sceneLoader;
 
+    void Start()
+    {
+        _sceneLoader = GameObject.FindGameObjectWithTag("MainManager").GetComponentInChildren<SceneLoader>();
+    }
+    
     public void Play()
     {
-        _sceneLoader.LoadScene("GameScene");
+        _sceneLoader.LoadScene(_sceneLoader._levels.name);
     }
 
     public void Options()
     {
-        _sceneLoader.LoadScene("OptionsScene");
+          _sceneLoader.LoadScene(_sceneLoader._options.name);
     }
 
     public void Quit()

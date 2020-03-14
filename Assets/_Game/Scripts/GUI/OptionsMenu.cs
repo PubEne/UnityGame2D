@@ -9,7 +9,7 @@ public class OptionsMenu : MonoBehaviour
 
     void Start()
     {
-        _sceneLoader = GameObject.Find("SceneManager").GetComponent<SceneLoader>();
+        _sceneLoader = GameObject.FindGameObjectWithTag("MainManager").GetComponentInChildren<SceneLoader>();
     }
 
     public void Option_1()
