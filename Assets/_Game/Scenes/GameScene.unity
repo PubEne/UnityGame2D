@@ -378,7 +378,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 282944424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb5aa6671c9fe94bab370669f74ab37, type: 3}
+  m_Script: {fileID: 11500000, guid: 91244434a6a496b4fba67116ff6b261d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates: []
@@ -392,6 +392,7 @@ GameObject:
   m_Component:
   - component: {fileID: 463307895}
   - component: {fileID: 463307896}
+  - component: {fileID: 463307897}
   m_Layer: 0
   m_Name: MainManager
   m_TagString: Untagged
@@ -423,6 +424,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b46ba880ff61d74da9d1683ab1549aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &463307897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463307894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8cd15b34c26d84fb15336a712a77a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &518655680
@@ -959,7 +972,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1256690965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb5aa6671c9fe94bab370669f74ab37, type: 3}
+  m_Script: {fileID: 11500000, guid: 91244434a6a496b4fba67116ff6b261d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates: []
@@ -1848,7 +1861,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 463307897}
         m_MethodName: DraggingOn
         m_Mode: 0
         m_Arguments:
@@ -1988,7 +2001,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1804016271}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb5aa6671c9fe94bab370669f74ab37, type: 3}
+  m_Script: {fileID: 11500000, guid: 91244434a6a496b4fba67116ff6b261d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates: []
