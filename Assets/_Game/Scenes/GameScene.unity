@@ -203,7 +203,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1309223122}
+      - m_Target: {fileID: 463307896}
         m_MethodName: Back
         m_Mode: 1
         m_Arguments:
@@ -422,7 +422,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 463307894}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe8cd15b34c26d84fb15336a712a77a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b46ba880ff61d74da9d1683ab1549aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &518655680
@@ -1848,7 +1848,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 463307896}
+      - m_Target: {fileID: 0}
         m_MethodName: DraggingOn
         m_Mode: 0
         m_Arguments:
