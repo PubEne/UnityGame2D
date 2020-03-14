@@ -18,6 +18,12 @@ public class MainMenu : MonoBehaviour
         _sceneLoader.PreviousScene();
     }
 
+    //TODO: Need to refactor. Another previous list for levels
+    public void LoadMorePreviousScene()
+    {
+        _sceneLoader.MorePreviousScene();
+    }
+
     public void LoadMainMenuScene()
     {
         _sceneLoader.LoadScene(Globals._main);
@@ -26,6 +32,16 @@ public class MainMenu : MonoBehaviour
     public void LoadOptionsScene()
     {
         _sceneLoader.LoadScene(Globals._options);
+    }
+
+    public void LoadPauseScene()
+    {
+        _sceneLoader.LoadScene(Globals._pause);
+    }
+
+    public void LoadGameOverScene()
+    {
+        _sceneLoader.LoadScene(Globals._gameOver);
     }
 
     public void LoadLevelsScene()

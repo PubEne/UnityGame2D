@@ -32,4 +32,9 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(_sceneHistory[_sceneHistory.Count-1]);
     }
+
+    public void MorePreviousScene()
+    {
+        SceneManager.LoadScene(_sceneHistory[_sceneHistory.Count - 2]);
+    }
 }
