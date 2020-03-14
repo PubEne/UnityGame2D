@@ -13,18 +13,18 @@ public class LevelsMenu : MonoBehaviour
     }
     public void Back()
     {
-        _sceneLoader.LoadScene(_sceneLoader._main.name);
+        _sceneLoader.LoadScene(Globals._main);
     }
 
     public void LoadLevel()
     {
-        // not the best solution. But easy to debug and cheap by calculations
-        // but name has to be in pattern _level_x
+        //not the best solution. But easy to debug and cheap by calculations
+        //but name has to be in pattern _level_x
         var gameObject = EventSystem.current.currentSelectedGameObject;
         if (gameObject != null)
             _sceneLoader.LoadScene(gameObject.name);
         else
-            Debug.Log("currentSelectedGameObject is null");
+            Debug.Log("LoadLevel go is null");
         
     }
 }

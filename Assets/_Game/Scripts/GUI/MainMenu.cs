@@ -14,12 +14,12 @@ public class MainMenu : MonoBehaviour
     
     public void Play()
     {
-        _sceneLoader.LoadScene(_sceneLoader._levels.name);
+        _sceneLoader.LoadScene(Globals._levels);
     }
 
     public void Options()
     {
-          _sceneLoader.LoadScene(_sceneLoader._options.name);
+          _sceneLoader.LoadScene(Globals._options);
     }
 
     public void Quit()
